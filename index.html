@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>她的回响 — Hereverberation</title>
+    <meta
+      name="description"
+      content="Hereverberation 她的回响：近一百年科学与艺术中的女性事迹，沿时间轴向下展开。"
+    />
+    <link rel="stylesheet" href="styles.css?v=24" />
+  </head>
+  <body>
+    <header class="mast">
+      <div class="mast-inner">
+        <div class="brand">
+          <p class="kicker">HEReverberation</p>
+          <h1>她的回响</h1>
+        </div>
+        <div class="filter-tags-wrap">
+          <div id="filter-tags" class="filter-tags" role="group" aria-label="类别"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <div class="switches">
+          <label class="switch">
+            <input id="oldest-first" type="checkbox" />
+            <span class="switch-track">正序</span>
+          </label>
+          <label class="switch">
+            <input id="by-birth" type="checkbox" />
+            <span class="switch-track">成就/出生</span>
+          </label>
+        </div>
+        <div class="filters">
+          <label class="filter">
+            <select id="filter-country" aria-label="国家"></select>
+          </label>
+        </div>
+      </div>
+      <ol id="timeline" class="timeline"></ol>
+      <p id="sentinel" class="sentinel">继续向下</p>
+    </main>
+
+    <script src="data.js?v=8"></script>
+    <script src="app.js?v=23"></script>
+  </body>
+</html>
